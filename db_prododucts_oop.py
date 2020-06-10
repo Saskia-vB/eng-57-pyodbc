@@ -26,7 +26,7 @@ print(product_table.get_by_id(1))
 
 # print(product_table.get_all())
 
-print(product_table.get_all('chef'))
+print(product_table.get_all('Chef'))
 
 
 # results = db_product_table().sql_query('SELECT * FROM Products')
