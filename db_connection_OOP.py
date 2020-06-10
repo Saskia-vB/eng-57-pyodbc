@@ -11,6 +11,7 @@ class MSDBconnection():
         self.conn = self._establish_connection()
         self.cursor = self.conn.cursor()
     # 2) establishing the connection
+
     def _establish_connection(self):
         connection = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+self.server+';DATABASE='+self.database+';UID='+self.username+';PWD='+ self.password)
         return connection
