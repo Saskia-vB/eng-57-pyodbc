@@ -4,7 +4,7 @@ This class will allow our python to easily connect with our DB.
 
 ## Package
 To do so, we will use a package (external to python standard library) call PYODBC.
-
+It's like a class but when we say import it first looks at standard library then a repository that has all those abstractions/OOP.
 This package abstracts our connections to the DB.
 
 ## Method
@@ -30,4 +30,18 @@ all_results_list = query_result.fetchall()
 
 for data in all_results_list:
     print(data.ProductName, data.UnitPrice)
+
+# PYODBC and OOP
+
+We are looking into the PYODBC package. 
+
+1)
+And we are going ot use the package to make a OOP module that abstracts our interaction with the NW DB. 
+2)
+And then further abstract the interaction with specific Tables. 
+
+3)
+Finally, where appropriate we will use the CRUD design to build methods. 
+
+
     
