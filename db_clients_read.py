@@ -7,12 +7,12 @@ class ReadClients(MSDBconnection):
         return self.sql_query('SELECT * FROM Customers').fetchone()
 
 
-    def get_all(self, customer_name=None):
+    def get_all(self, contact_name=None):
         result_list = []
-        if customer_name == None:
+        if contact_name == None:
             q_result = self.sql_query('SELECT * FROM Customers')
         else:
-            q_result = self.sql_query(f"SELECT * FROM Customers WHERE CustomerName LIKE '%{customer_name}%'")
+            q_result = self.sql_query(f"SELECT * FROM Customers WHERE ContactName LIKE '%{contact_name}%'")
         while True:
             row = q_result.fetchone()
             if row == None:
