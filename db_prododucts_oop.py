@@ -21,12 +21,9 @@ class DBProduct_table(MSDBconnection):
 
 
 
-product_table = DBProduct_table()
-print(product_table.get_by_id(1))
 
-# print(product_table.get_all())
 
-print(product_table.get_all('Chef'))
+
 
 
 # results = db_product_table().sql_query('SELECT * FROM Products')

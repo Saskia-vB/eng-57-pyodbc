@@ -12,5 +12,3 @@ class DBClientstable(MSDBconnection):
         return self.sql_query(f"""INSERT INTO Customers (CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
     VALUES (f{CustomerID}, '{CompanyName}', {ContactName}, {ContactTitle},'{Address}', {City}, {Region}, {PostalCode}, {Country}, {Phone}, {Fax})""")
 
-clients_table = DBClientstable()
-# print(clients_table.create_entry('ZHRJ', 'Carrefour', 'Jean-Charles', 'Manager', '4 Privet drive', 'London', 'Greater London', 'XK121HZ', 'UK', '790097483', '7299302'))

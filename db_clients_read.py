@@ -9,7 +9,6 @@ class ReadClients(MSDBconnection):
 
     def get_all(self, customer_name=None):
         result_list = []
-
         if customer_name == None:
             q_result = self.sql_query('SELECT * FROM Customers')
         else:
